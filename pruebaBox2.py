@@ -39,7 +39,7 @@ while True:
         time.sleep(3)
 
     if int(now.minute) == 0 and int(now.second) >= 0 and int(now.second) <= 20:
-        telegram_send.send(messages=["Todo bien son las: " + timen])
+        telegram_send.send(messages=["Todo bien son las: " + timen + ". Las llaves ahorita son " + str(keys) + " y la gente " + str(gente)])
     
     if (int(now.minute) == 0 or int(now.minute) == 30) and int(now.second) >= 0 and int(now.second) <= 20:
         print("Las llaves ahorita son " + str(keys) + " y la gente " + str(gente) + " son las " + timen)
